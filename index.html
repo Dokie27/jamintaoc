@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamin Taoc | Dental Insurance Billing & AR Assistant</title>
+<meta name="description" content="Professional portfolio of Jamin Taoc, Dental Insurance Billing & AR Assistant specializing in payment posting, dental AR, claims follow-up and insurance billing support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#24313a;--muted:#66737b;--cream:#fbfaf7;--paper:#fff;--gold:#b79a63;--line:#e8e2d8;--soft:#f3f0e9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;background:rgba(251,250,247,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:20}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:700;letter-spacing:.04em}
+.logo span{color:var(--gold)}
+.links{display:flex;gap:28px;font-size:13px;font-weight:600;color:#536069}
+.links a:hover{color:var(--gold)}
+.hero{min-height:760px;padding:160px 0 90px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px;background:radial-gradient(circle at 82% 20%,#eee8dc 0,transparent 33%)}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:18px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif}
+h1{font-size:clamp(54px,7vw,88px);line-height:.94;font-weight:600;letter-spacing:-.02em;margin-bottom:26px}
+h1 em{font-weight:500;color:#758087}
+.hero p{max-width:630px;color:var(--muted);font-size:16px}
+.cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.btn{padding:13px 21px;border:1px solid var(--ink);font-size:13px;font-weight:700;letter-spacing:.03em;transition:.2s}
+.btn.primary{background:var(--ink);color:white}
+.btn:hover{transform:translateY(-2px)}
+.card{background:var(--paper);border:1px solid var(--line);box-shadow:0 20px 60px rgba(45,45,35,.08)}
+.hero-card{padding:42px;position:relative}
+.hero-card:before{content:"";position:absolute;inset:13px;border:1px solid #eee8dd;pointer-events:none}
+.monogram{width:92px;height:92px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:38px;color:var(--gold);margin-bottom:30px}
+.hero-card h3{font-size:32px;line-height:1.05;margin-bottom:13px}
+.hero-card p{font-size:13px}
+.mini{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+section{padding:105px 0}
+.section-head{max-width:690px;margin-bottom:48px}
+.section-head h2{font-size:52px;line-height:1;margin:8px 0 16px}
+.section-head p{color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{padding:30px;min-height:210px}
+.number{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:24px}
+.service h3{font-size:27px;margin:13px 0 8px}
+.service p{font-size:13px;color:var(--muted)}
+.alt{background:#f1eee7}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.skillbox{padding:32px}
+.skillbox h3{font-size:30px;margin-bottom:20px}
+.pills{display:flex;flex-wrap:wrap;gap:9px}
+.pill{padding:8px 12px;border:1px solid var(--line);background:white;font-size:12px;font-weight:600;color:#59666d}
+.timeline{border-left:1px solid #d8d0c2;padding-left:28px}
+.item{position:relative;padding-bottom:34px}
+.item:before{content:"";position:absolute;left:-34px;top:8px;width:9px;height:9px;border:2px solid var(--gold);background:var(--cream);border-radius:50%}
+.item .date{font-size:11px;letter-spacing:.14em;color:var(--gold);font-weight:700;text-transform:uppercase}
+.item h3{font-size:30px;margin:5px 0}
+.item p{font-size:13px;color:var(--muted)}
+.workflow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.step{padding:22px 14px;background:white;border:1px solid var(--line);text-align:center;font-size:12px;font-weight:700}
+.step b{display:block;font-family:"Cormorant Garamond",serif;font-size:25px;color:var(--gold);margin-bottom:8px}
+.sample{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sample .card{padding:30px}
+.sample h3{font-size:28px;margin-bottom:12px}
+.sample p,.sample li{font-size:13px;color:var(--muted)}
+.sample ul{padding-left:18px}
+.contact{background:var(--ink);color:white}
+.contact .section-head p{color:#c5cdd0}
+.contact-card{padding:35px;background:#2c3a43;border:1px solid #43515a;display:flex;justify-content:space-between;gap:30px;align-items:center}
+.contact-card h3{font-size:34px}
+.contact-card p{font-size:13px;color:#c8d0d3}
+footer{padding:25px 0;background:#202c33;color:#aeb9bd;font-size:11px;text-align:center}
+@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:125px;gap:45px}.grid3,.skills,.sample{grid-template-columns:1fr}.workflow{grid-template-columns:repeat(2,1fr)}section{padding:75px 0}.section-head h2{font-size:43px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="logo" href="#home">JAMIN<span>.</span></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#software">Software</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main id="home">
+<section class="hero">
+<div class="container" style="display:contents">
+<div>
+<div class="eyebrow">Dental Insurance Billing • Accounts Receivable</div>
+<h1>Precision behind<br><em>every dental claim.</em></h1>
+<p>I’m Jamin Taoc, a Dental Insurance Billing & AR Assistant focused on payment posting, outstanding claim follow-up, denial review, EOB review, and accurate account documentation.</p>
+<div class="cta"><a class="btn primary" href="#experience">View Experience</a><a class="btn" href="#contact">Let's Connect</a></div>
+</div>
+<div class="card hero-card">
+<div class="monogram">JT</div>
+<h3>Dental Billing<br>& AR Support</h3>
+<p>Reliable, detail-oriented support for dental practices and remote billing teams.</p>
+<div class="mini">Payment Posting · Claims Follow-up · AR · Insurance Research</div>
+</div>
+</div>
+</section>
+
+<section id="about"><div class="container">
+<div class="section-head"><div class="eyebrow">About Me</div><h2>Organized, accurate, and focused on resolution.</h2><p>I have hands-on experience supporting dental insurance billing workflows, including reviewing outstanding claims, researching payer responses, documenting follow-ups, and posting payments accurately.</p></div>
+<div class="grid3">
+<div class="card service"><span class="number">01</span><h3>Payment Posting</h3><p>Posting insurance payments and reviewing payment details, EOB information, adjustments, and account balances for accuracy.</p></div>
+<div class="card service"><span class="number">02</span><h3>Dental AR</h3><p>Working outstanding accounts and claims, prioritizing follow-up, documenting payer responses, and moving accounts toward resolution.</p></div>
+<div class="card service"><span class="number">03</span><h3>Claims Follow-up</h3><p>Checking claim status, reviewing denials or pending claims, identifying next steps, and maintaining clear claim notes.</p></div>
+</div>
+</div></section>
+
+<section id="services" class="alt"><div class="container">
+<div class="section-head"><div class="eyebrow">What I Do</div><h2>Dental billing support that keeps AR moving.</h2></div>
+<div class="grid3">
+<div class="card service"><h3>Insurance Follow-up</h3><p>Research outstanding, pending, denied, and unpaid claims and document payer responses.</p></div>
+<div class="card service"><h3>EOB Review</h3><p>Review payment and denial information to help identify balances, adjustments, and follow-up needs.</p></div>
+<div class="card service"><h3>Claim Resolution</h3><p>Assist with corrections, resubmissions, documentation requests, and other billing follow-up.</p></div>
+<div class="card service"><h3>Account Accuracy</h3><p>Maintain clear notes and accurate claim/account information throughout the billing workflow.</p></div>
+<div class="card service"><h3>Denial Review</h3><p>Review denial reasons and determine appropriate next actions based on available claim information.</p></div>
+<div class="card service"><h3>Remote Support</h3><p>Comfortable working independently with digital billing systems, spreadsheets, portals, and remote team workflows.</p></div>
+</div>
+</div></section>
+
+<section id="software"><div class="container">
+<div class="section-head"><div class="eyebrow">Technology</div><h2>Dental practice management systems.</h2><p>Hands-on familiarity with multiple dental platforms used for billing, claims, accounts, and practice workflows.</p></div>
+<div class="skills">
+<div class="card skillbox"><h3>Dental Software</h3><div class="pills"><span class="pill">Archy</span><span class="pill">Denticon</span><span class="pill">Dentrix Ascend</span><span class="pill">Open Dental</span><span class="pill">Aspro</span><span class="pill">Eaglesoft</span></div></div>
+<div class="card skillbox"><h3>Core Skills</h3><div class="pills"><span class="pill">Payment Posting</span><span class="pill">Dental AR</span><span class="pill">Claims Follow-up</span><span class="pill">EOB Review</span><span class="pill">Denial Review</span><span class="pill">Claim Resubmission</span><span class="pill">CDT Familiarity</span><span class="pill">Accurate Documentation</span></div></div>
+</div>
+</div></section>
+
+<section id="experience" class="alt"><div class="container">
+<div class="section-head"><div class="eyebrow">Experience</div><h2>A growing dental billing career.</h2></div>
+<div class="timeline">
+<div class="item"><div class="date">2024–2025</div><h3>CAMBE Dental Billing</h3><p><b>Dental Insurance Billing / AR Assistant</b><br>Handled outstanding dental insurance claims, payer follow-up, denial review, payment posting, EOB/payment review, documentation, and claim corrections or resubmissions.</p></div>
+<div class="item"><div class="date">2024–2025</div><h3>Digital Minds BPO Services</h3><p><b>Call Center Agent</b><br>Handled inbound and outbound calls, billing inquiries, customer concerns, documentation, and professional communication.</p></div>
+<div class="item"><div class="date">2023–2024</div><h3>St. Luke’s Medical Center – BGC</h3><p><b>Pathology Customer Service Associate</b><br>Supported documentation, billing-related processes, patient records, accurate data entry, and coordination with medical staff.</p></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-head"><div class="eyebrow">My Workflow</div><h2>A simple process. Thorough follow-through.</h2></div>
+<div class="workflow">
+<div class="step"><b>01</b>Review AR</div><div class="step"><b>02</b>Check Claim</div><div class="step"><b>03</b>Contact Payer</div><div class="step"><b>04</b>Document</div><div class="step"><b>05</b>Follow Up</div><div class="step"><b>06</b>Post / Resolve</div>
+</div>
+</div></section>
+
+<section class="alt"><div class="container">
+<div class="section-head"><div class="eyebrow">Sample Work</div><h2>Examples of how I approach billing tasks.</h2><p>Examples below are fictional and contain no real patient information.</p></div>
+<div class="sample">
+<div class="card"><h3>Claim Follow-up</h3><p><b>Example:</b> Claim is pending with the payer.</p><ul><li>Verify patient and claim details.</li><li>Check payer claim status.</li><li>Document the payer response.</li><li>Record the next follow-up action.</li></ul></div>
+<div class="card"><h3>Payment Posting</h3><p><b>Example:</b> Insurance payment received with EOB.</p><ul><li>Review payment and EOB details.</li><li>Post payment and applicable adjustments.</li><li>Verify remaining account balance.</li><li>Document posting status accurately.</li></ul></div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="container">
+<div class="section-head"><div class="eyebrow">Contact</div><h2>Let’s work together.</h2><p>Open to remote opportunities in dental insurance billing, AR, payment posting, and claims follow-up.</p></div>
+<div class="contact-card">
+<div><h3>Jamin Taoc</h3><p>Dental Insurance Billing & AR Assistant · Philippines</p></div>
+<a class="btn" style="color:white;border-color:#aeb9bd" href="mailto:internjamin@gmail.com">Email Me</a>
+</div>
+</div></section>
+</main>
+<footer>© 2026 Jamin Taoc · Dental Insurance Billing & AR Assistant</footer>
+</body>
+</html>
